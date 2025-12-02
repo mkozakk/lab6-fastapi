@@ -19,7 +19,7 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v2
         with:
-          python-version: '3.8'  # Zmienna wersja Pythona, zależnie od tego, którą wersję potrzebujesz
+          python-version: '3.8'
 
       - name: Install dependencies
         run: |
@@ -28,4 +28,4 @@ jobs:
 
       - name: Run tests with pytest
         run: |
-          pytest test --maxfail=1 --disable-warnings -q  # Testy w katalogu 'test'
+          pytest tests --maxfail=1 --disable-warnings -q
